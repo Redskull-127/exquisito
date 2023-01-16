@@ -4,7 +4,11 @@ const nextConfig = {
   images: {
     domains: ["images.pexels.com", "player.vimeo.com"],
     unoptimized: true,
+    loader: "akamai",
+    path: ''
   },
+  basePath: "",
+  assetPrefix: "",
   
 }
 
