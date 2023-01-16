@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import Navbar from "../src/components/cartpage/Navbar"
-export default function CartPage() {
+export default function Cart() {
     const [cart, setCart] = useState(null);
     function fetchItems() {
         setCart(JSON.parse(localStorage.getItem('cart')));

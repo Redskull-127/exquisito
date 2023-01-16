@@ -6,7 +6,7 @@ import { doc, setDoc, getFirestore } from "firebase/firestore";
 
 const db = getFirestore(firebase);
 export default function CartNavbar() {
-    const uuid = crypto.randomUUID();
+    const uuid = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
     const router = useRouter();
     const [totalValue, setTotalValue] = useState(0);
     function fetchItems() {
