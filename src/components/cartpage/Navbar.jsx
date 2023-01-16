@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import firebase from '../../firebase/firebase'
 import { doc, setDoc, getFirestore } from "firebase/firestore";
