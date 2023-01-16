@@ -5,7 +5,7 @@ import { doc, setDoc, getFirestore } from "firebase/firestore";
 
 
 const db = getFirestore(firebase);
-export default function Navbar() {
+export default function CartNavbar() {
     const uuid = crypto.randomUUID();
     const router = useRouter();
     const [totalValue, setTotalValue] = useState(0);
